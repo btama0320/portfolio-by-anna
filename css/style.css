@@ -7,7 +7,9 @@ body {
 
 /* 左側サイドバー */
 .sidebar {
-  width: 220px;
+  width: 200px;              /* 少し広げて余裕を持たせる */
+  min-width: 180px;          /* これ以下にはならないように */
+  max-width: 220px;  
   background-color: #e0f7f1;
   color: #444;
   height: 100vh;
@@ -89,6 +91,7 @@ body {
 .content {
   margin-left: 240px;
   padding: 40px;
+  padding-bottom: 80px; /* フッター高さ＋余白分 */
   width: calc(100% - 240px);
   box-sizing: border-box;
   background-color: #fffaf8; /* ほんのりピーチ系背景 */
@@ -192,6 +195,18 @@ section h2 {
   transform: translateY(-4px);
 }
 
+.work-card {
+  text-decoration: none; /* 下線を消す */
+  color: inherit;        /* 親要素の色を継承 */
+}
+.work-card h3,
+.work-card p,
+.work-card span {
+  text-decoration: none; /* 念のため中の要素も下線なし */
+  color: #5c4033;        /* 好きな色に固定 */
+}
+
+
 /* 左側：情報ブロック */
 .work-info {
   flex: 1;
@@ -258,13 +273,17 @@ section h2 {
 
 /* フッターを横幅いっぱいに広げる */
 footer {
-  position: fixed;   /* 画面に固定 */
-  bottom: 0;         /* 下端に配置 */
-  left: 0;           /* 左端から開始 */
-  width: 100%;       /* 横幅いっぱい */
-  background-color: #e0f7f1; /* パステルミント系 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0f7f1;
   color: #444;
   text-align: center;
-  padding: 20px;
-  font-weight: bold;
+  padding: 5px 16px;       /* 高さを抑えつつ横余白は維持 */
+  font-size: 0.9em;         /* 少しだけ文字サイズを抑える */
+  line-height: 1.4;         /* 行間で圧迫感を軽減 */
+  font-weight: normal;      /* 太字をやめて柔らかく */
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05); /* 上に影で浮かせ感 */
 }
+
