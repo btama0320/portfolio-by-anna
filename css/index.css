@@ -57,3 +57,78 @@ img {
   color: #6e6259;
   margin-bottom: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    background-color: #e0f7f1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .nav-block ul {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-block li {
+    margin: 0;
+  }
+
+  .profile-block {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .profile-icon {
+    width: 60px;
+  }
+
+  .profile-text {
+    font-size: 0.85em;
+    text-align: left;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+   .works-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-card.horizontal {
+    flex-direction: column;
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .work-image {
+    width: 100%;
+    border-left: none;
+    margin-top: 12px;
+  }
+
+  footer {
+    position: static;
+    padding: 12px;
+    font-size: 0.85em;
+  }
+}
