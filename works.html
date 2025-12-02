@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>販売管理システム | PORTFOLIO by Anna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/works.css">
+</head>
+<body>
+  <header>
+    <div class="sidebar">
+      <nav class="nav-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile-block">
+        <img src="./images/profile-icon.png" alt="Annaのアイコン" class="profile-icon">
+        <p class="profile-text">
+            和室で猫とコーディング中🐾<br>
+            見た目の美しさと<br>
+            使いやすさのどちらも大切に、<br>
+            納得感のあるUIを目指しています
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <h1>販売管理システム</h1>
+    <p class="subtitle">Laravel × MySQLで構築した業務効率化システム</p>
+
+    <div class="card-gallery">
+      <div class="image-card">
+        <img src="images/login-password.png" alt="ログイン画面">
+        <p>ログイン画面：初回パスワード変更機能付き</p>
+      </div>
+      <div class="image-card">
+        <img src="images/admin.png" alt="管理者画面">
+        <p>管理者画面：売上・在庫・ユーザー管理などを統合予定。現在設計中です。</p>
+      </div>
+      <div class="image-card">
+        <img src="images/receivable.png" alt="伝票入力画面">
+        <p>業務選択画面：伝票入力やマスタ管理を選択可能</p>
+      </div>
+    </div>
+  
+
+
+      <section>
+        <h2>概要</h2>
+        <p>
+          前職で感じた業務の課題をヒントに、効率化と使いやすさを重視して開発した販売管理システムです。<br>
+          ログインや初回パスワード変更、管理者画面など、現場での運用を意識した設計を取り入れています。<br>
+          伝票入力画面では、ファンクションキーによるショートカット操作など、細部の操作性にもこだわりました。
+        </p>
+      </section>
+
+      <section>
+        <h2>主な機能</h2>
+        <ul>
+          <li>ログイン認証（社員ID＋初期パスワード）</li>
+          <li>売掛伝票入力（行番号・スクロール・集計欄付き）</li>
+          <li>ユーザー管理（管理者のみアクセス可能）</li>
+          <li>パスワード変更・初回変更フラグ</li>
+          <li>操作ログ・レポート管理</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>技術構成</h2>
+        <table>
+          <tr><th>フレームワーク</th><td>Laravel 10</td></tr>
+          <tr><th>データベース</th><td>MySQL（Railway連携）</td></tr>
+          <tr><th>デプロイ</th><td>Render</td></tr>
+          <tr><th>開発環境</th><td>VS Code / GitHub / Windows</td></tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>リンク</h2>
+        <div class="links">
+          <a href="https://sales-management-laravel.onrender.com" target="_blank">デモを見る</a>
+          <a href="https://github.com/btama0320/sales-management-laravel" target="_blank">コードを見る</a>
+        </div>
+      </section>
+  </div>
+
+  <footer>
+    <p>🐈 Thank you for visiting! 🐾<br>
+    © 2025 Anna. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

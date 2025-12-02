@@ -1,0 +1,91 @@
+
+
+/* リンクボタン */
+.links a {
+  display: inline-block;
+  margin: 6px 10px 6px 0;
+  padding: 6px 12px;
+  background-color: #ffb6b9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85em;
+  transition: background-color 0.2s ease;
+}
+.links a:hover {
+  background-color: #ff6f91;
+}
+
+/* 画像カードギャラリー */
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.card-gallery img {
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #fcdede;
+  border-radius: 12px;
+}
+
+.image-card {
+  width: 550px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+
+.image-card p {
+  padding: 12px;
+  font-size: 0.95em;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+th, td {
+  border: 1px solid #fcdede;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #6e6259;
+}
+th {
+  background-color: #ffe3e3;
+  color: #444;
+}
+td a {
+  color: #a9746e;
+  text-decoration: none;
+  font-weight: bold;
+}
+td a:hover {
+  color: #ffb6b9;
+  text-decoration: underline;
+}

@@ -1,0 +1,131 @@
+/* 共通ベース */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f5e7;
+  color: #7b5e57;
+}
+
+/* サイドバー */
+.sidebar {
+  width: 210px;
+  min-width: 180px;
+  max-width: 220px;
+  background-color: #e0f7f1;
+  color: #444;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar a {
+  color: #a9746e;
+}
+.sidebar a:hover {
+  color: #ffb6b9;
+}
+
+/* ナビゲーション */
+.nav-block {
+  width: 100%;
+}
+.nav-block h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+.nav-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0 0 0;
+}
+.nav-block li {
+  margin: 15px 0;
+  text-align: left;
+}
+.nav-block a {
+  color: #a9746e;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-block a:hover {
+  color: #0066cc;
+}
+
+/* プロフィール */
+.profile-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.profile-icon {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  background-color: #dac3c0;
+}
+
+.profile-text {
+  font-size: 0.85em;
+  color: #6e6259;
+  text-align: left;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* コンテンツ */
+.content {
+  margin-left: 240px;
+  padding: 40px;
+  padding-bottom: 80px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+  background-color: #fffaf8;
+}
+
+h1, h2, h3 {
+  color: #5c4033;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  background-color: #ffe3e3;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  color: #6e6259;
+}
+
+section h2 {
+  border-left: 6px solid #98f5e1;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0f7f1;
+  color: #444;
+  text-align: center;
+  padding: 5px 16px;
+  font-size: 0.9em;
+  line-height: 1.4;
+  font-weight: normal;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}
