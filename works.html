@@ -30,7 +30,7 @@
   </header>
 
   <div class="content">
-    <h1>販売管理システム</h1>
+    <h1>小規模事業者向けの販売管理を想定したWebアプリ</h1>
     <p class="subtitle">Laravel × MySQLで構築した業務効率化システム</p>
 
     <div class="card-gallery">
@@ -48,45 +48,71 @@
       </div>
     </div>
   
-
-
-      <section>
-        <h2>概要</h2>
-        <p>
-          前職で感じた業務上の課題をもとに、効率化と使いやすさを重視して開発した販売管理システムです。<br>
-          ログイン機能や初回パスワード変更、管理者画面など、実際の業務運用を想定した設計を取り入れています。<br>
-          伝票入力画面では、ファンクションキーによるショートカット操作を実装し、Windowsアプリケーションに近い操作感をWebアプリで再現することを目指しました。
-        </p>
-      </section>
-
-      <section>
-        <h2>主な機能</h2>
-        <ul>
-          <li>ログイン認証（社員ID＋初期パスワード）</li>
-          <li>パスワード変更・初回変更フラグ</li>
-          <li>ユーザー管理（管理者のみアクセス可能）</li>
-          <li>操作ログ・レポート管理（現在設計中）</li>
-          <li>売掛伝票入力（行番号・スクロール・集計欄付き）</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>技術構成</h2>
-        <table>
-          <tr><th>フレームワーク</th><td>Laravel 10</td></tr>
-          <tr><th>データベース</th><td>MySQL（Railway連携）</td></tr>
-          <tr><th>デプロイ</th><td>Render</td></tr>
-          <tr><th>開発環境</th><td>VS Code / GitHub / Windows</td></tr>
-        </table>
-      </section>
-
-      <section>
+    <section>
         <h2>リンク</h2>
         <div class="links">
           <a href="https://sales-management-laravel.onrender.com" target="_blank">デモを見る</a>
           <a href="https://github.com/btama0320/sales-management-laravel" target="_blank">コードを見る</a>
         </div>
       </section>
+
+    <section>
+      <h2>概要</h2>
+      <p>
+        前職で感じた業務上の課題をもとに、効率化と使いやすさを重視して開発した販売管理システムです。<br>
+        ログイン機能や初回パスワード変更、管理者画面など、実際の業務運用を想定した設計を取り入れています。<br>
+        伝票入力画面では、ファンクションキーによるショートカット操作を実装し、Windowsアプリケーションに近い操作感をWebアプリ上で実現することを意識しました。
+      </p>
+    </section>
+
+    <section>
+      <h2>主な機能</h2>
+      <ul>
+        <li>ログイン認証（社員ID＋初期パスワード）</li>
+        <li>パスワード変更・初回変更フラグ</li>
+        <li>ユーザー管理（管理者のみアクセス可能）</li>
+        <li>操作ログ・レポート管理（現在設計中）</li>
+        <li>売掛伝票入力（行番号・スクロール・集計欄付き）</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>技術構成</h2>
+      <table>
+        <tr><th>フレームワーク</th><td>Laravel 10</td></tr>
+        <tr><th>データベース</th><td>MySQL（Railway連携）</td></tr>
+        <tr><th>デプロイ</th><td>Render</td></tr>
+        <tr><th>開発環境</th><td>VS Code / GitHub / Windows</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>システム設計（データベース設計）</h2>
+      <ul>
+        <li>業務で使用される伝票構造を意識し、伝票ヘッダと明細を分離した設計としています</li>
+        <li>商品・顧客・品目などはマスタとして管理し、変更に強い構成を意識しました</li>
+        <li>検索性向上のため、ローマ字・ひらがな・カタカナの検索キーを保持しています</li>
+      </ul>
+      <div class="image-card">
+        <img src="images/er.png" alt="ER図">
+        <p>ER図：伝票構造とマスタの関係を示しています</p>
+      </div>
+    </section>
+
+    <section id="test">
+      <h2>テスト</h2>
+      <h4>実施期間：2025年12月10日〜12月15日</h4>
+      <h4>対象機能</h4>
+      <p>ログイン認証、パスワード変更、伝票入力、バリデーション、Ajax検索、UI操作など</p>
+      <h4>確認内容</h4>
+      <p>正常系：ログイン成功、パスワード変更、伝票登録、検索補完など</p>
+      <p>異常系：未入力・誤入力時のエラーメッセージ表示、認証失敗時の挙動</p>
+      <h4>結果概要</h4>
+      <p>主要機能は正常に動作</p>
+      <p>一部UI表示・認証処理に改善点あり</p>
+    </section>
+
+      
   </div>
 
   <footer>
